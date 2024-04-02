@@ -41,7 +41,11 @@ createApp({
                         done: false,
                     },
                 ],
-            newUserTask:''
+            newUserTask:'',
+           /*  newToDo :{
+                text:'',
+                done: false,
+            } */
         };
     },
     methods: {
@@ -49,7 +53,8 @@ createApp({
             this.todo.splice(index, 1);
         },
         addNewUserTask() {
-            this.todo.push(this.newUserTask)
+           this.todo.push(this.newUserTask)
+           //this.newToDo.push(this.newUserTask),
         }
     }
 }).mount('#app');
