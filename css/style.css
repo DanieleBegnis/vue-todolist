@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+header h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px
+}
 .add {
     text-align: center;
 }
