@@ -18,11 +18,14 @@
                 <button>Aggiungi nuova task</button>
             </div>
             <div class="task-list">
-                <div class="single-task" v-for="text, index in todo">
+                <div class="single-task" 
+                v-for="text, index in todo"
+                :class="{'task-done': done }"
+                >
                     <div>
                         {{ todo[index].text }}
                     </div>
-                    <span>X</span>
+                    <span @click="removeTodo(index)">X</span>
                 </div>
             </div>
         </main>

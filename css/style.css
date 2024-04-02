@@ -32,3 +32,6 @@
     font-size: 20px;
     border-bottom: 1px solid gray;
 }
+.task-done {
+    text-decoration: line-through;
+}

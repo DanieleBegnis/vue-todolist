@@ -44,6 +44,8 @@ createApp({
         };
     },
     methods: {
-
+        removeTodo(index) {
+            this.todo.splice(index, 1);
+        }
     }
 }).mount('#app');
