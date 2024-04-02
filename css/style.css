@@ -18,3 +18,17 @@
     padding: 12px;
     border-radius: 10px;
 }
+.task-list {
+    background-color: antiquewhite;
+    margin: 20px;
+    border-radius: 10px;
+}
+.single-task {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+}
