@@ -41,11 +41,15 @@ createApp({
                         done: false,
                     },
                 ],
+            newUserTask:''
         };
     },
     methods: {
         removeTodo(index) {
             this.todo.splice(index, 1);
+        },
+        addNewUserTask() {
+            this.todo.push(this.newUserTask)
         }
     }
 }).mount('#app');

@@ -17,13 +17,13 @@
         </header>
         <main>
             <div class="add">
-                <input type="text" placeholder="Inserisci nuova task">
-                <button>Aggiungi nuova task</button>
+                <input type="text" placeholder="Inserisci nuova task" v-model="newUserTask">
+                <button @click="addNewUserTask">Aggiungi nuova task</button>
             </div>
             <div class="task-list">
                 <div class="single-task" 
                 v-for="text, index in todo"
-                :class="{'task-done': done }"
+                :class="{'task-done': done}"
                 >
                     <div>
                         {{ todo[index].text }}

@@ -38,4 +38,5 @@ header h1 {
 }
 .task-done {
     text-decoration: line-through;
+    color: red;
 }
