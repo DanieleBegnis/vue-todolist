@@ -22,11 +22,11 @@
             </div>
             <div class="task-list">
                 <div class="single-task" 
-                v-for="text, index in todo"
-                :class="{'task-done': done}"
+                v-for="todo, index in todo"
+                :class="{'task-done': todo.done}"
                 >
                     <div>
-                        {{ todo[index].text }}
+                        {{ todo.text }}
                     </div>
                     <span @click="removeTodo(index)">X</span>
                 </div>
