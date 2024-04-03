@@ -53,7 +53,8 @@ createApp({
                 text: this.newUserTask,
                 done: false
             }
-           this.todo.unshift(newTodo)
+           this.todo.unshift(newTodo);
+           this.newUserTask= ''
         }
     }
 }).mount('#app');
